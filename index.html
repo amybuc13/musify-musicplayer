@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>musify</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stars">
+        <img src="images/icons8-sparkling-80.png" alt="Stars">
+    </div>
+  <div class="player">
+    <img src="images/panda.jpg" alt="Album Art" class="album-art">
+    <div class="title" id="title">Pandas Playlist</div>
+    <audio id="audio"></audio> 
+    <div class="controls">
+      <button onclick="previousAudio()">
+        <img src="images/previous.png" alt="previous" class="control-img">
+      </button> 
+      <button onclick="playAudio()" class="play-btn">
+        <img src="images/icons8-play-48.png" alt="play" class="control-img">
+      </button>
+      <button onclick="pauseAudio()" class="pause-btn" style="display:none;">
+        <img src="images/icons8-pause-64.png" alt="pause" class="control-img">
+      </button>
+      <button onclick="skipAudio()">
+        <img src="images/icons8-skip-64.png" alt="skip" class="control-img">
+      </button>
+    </div>
+    <div class="volume-control">
+      <input type="range" id="volume" min="0" max="1" step="0.01" value="1" />
+      <img src="images/icons8-low-volume-64.png" alt="Volume" class="volume-icon" />
+    </div>
+  </div>
+  <div class="moon">
+    <img src="images/icons8-moon-and-stars-100.png" alt="Moon">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
